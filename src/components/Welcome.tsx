@@ -1,12 +1,22 @@
+import useSWR from "swr";
+import useApi from "../hooks/useApi";
+
 const Welcome = () => {
+  const api = useApi();
+  const { data, error } = useSWR(
+    "https://httpbin.org/gett",
+    (url): Promise<number> => api.getFetcher(url)
+  );
+
+  console.log(data, error);
   return (
     <div
       id="Welcome"
-      className="gap-3 grid grid-cols-1 lg:grid-cols-4 pt-60 p-5 pb-20"
+      className="grid grid-cols-1 gap-3 p-5 pb-20 lg:grid-cols-4 pt-60"
     >
       <div></div>
       <div className="col-span-2">
-        <div className="md:text-6xl text-4xl text-black text-center">
+        <div className="text-4xl text-center text-black md:text-6xl">
           Welcome!
         </div>
       </div>
