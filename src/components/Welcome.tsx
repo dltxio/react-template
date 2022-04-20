@@ -1,14 +1,4 @@
-import useSWR from "swr";
-import useApi from "../hooks/useApi";
-
 const Welcome = () => {
-  const api = useApi();
-  const { data, error } = useSWR(
-    "https://httpbin.org/gett",
-    (url): Promise<number> => api.getFetcher(url)
-  );
-
-  console.log(data, error);
   return (
     <div
       id="Welcome"
