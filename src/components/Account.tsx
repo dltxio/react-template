@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useAccount } from "wagmi";
 
 const Account = () => {
@@ -21,4 +20,5 @@ const Account = () => {
     </div>
   );
 };
+
 export default Account;

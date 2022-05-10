@@ -101,7 +101,8 @@ modules.xml
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -262,4 +263,5 @@ dist
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/node,jetbrains+all,visualstudiocode,macos
+# Typechain
+src/contracts

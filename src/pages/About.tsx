@@ -1,4 +1,3 @@
-import React from "react";
 import { About as Page } from "../components";
 
 const About = () => {

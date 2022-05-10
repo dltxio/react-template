@@ -16,11 +16,9 @@ const useWagmi = () => {
   return {
     networkData,
     switchNetworkError,
-
     accountData,
     accountError,
     accountLoading,
-
     balanceData,
     balanceError,
     balanceLoading
